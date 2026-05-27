@@ -7,7 +7,7 @@ interface Stats {
 }
 
 // 統計情報を計算する関数
-function calculateStates(numbers: number[]): Stats {
+function calculateStats(numbers: number[]): Stats {
   if (numbers.length === 0) {
     return { sum: 0, average: 0, max: 0, min: 0 };
   }
@@ -22,7 +22,7 @@ function calculateStates(numbers: number[]): Stats {
 
 // テスト
 const scores: number[] = [85, 90, 78, 92, 88];
-const result = calculateStates(scores);
+const result = calculateStats(scores);
 
 console.log(`合計: ${result.sum}`);
 console.log(`平均: ${result.average}`);
